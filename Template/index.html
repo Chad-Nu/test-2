@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Opposite Word Finder</title>
+</head>
+<body style="background-color: red; color: white;">
+    <h1 style="color: white;">Super Fun Opposite Word Finder</h1>
+    <form method="post" action="/">
+        <label for="input_word">Enter a word:</label>
+        <input type="text" id="input_word" name="input_word" required>
+        <button type="submit">Find Opposite</button>
+    </form>
+
+    {% if opposite_word %}
+        <p style="color: white;">The opposite word is: {{ opposite_word }}</p>
+    {% endif %}
+</body>
+</html>
+
